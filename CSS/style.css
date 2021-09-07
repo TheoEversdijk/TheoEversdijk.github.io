@@ -23,17 +23,23 @@ nav {
   
   il {
     display: block;
-    color: #000;
     padding: 8px 16px;
     text-decoration: none;
   }
   
-  il.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
   il:hover:not(.active) {
     background-color: powderblue;
-    color: white;
+  }
+
+  ul {
+    border: 1px solid #555;
+  }
+  
+  li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+  }
+  
+  li:last-child {
+    border-bottom: none;
   }
