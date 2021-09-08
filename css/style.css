@@ -19,27 +19,30 @@ nav {
     position: fixed;
     height: 100%;
     overflow: auto;
+    border: 1px solid #555;
   }
   
   il {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
+    color: black; 
+    text-align: center;
+    border-bottom: 1px solid #555;
+    font-size:25px
   }
   
   il:hover:not(.active) {
     background-color: powderblue;
   }
 
-  ul {
-    border: 1px solid #555;
-  }
-  
-  il {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(182, 203, 206);
+    color: black;
     text-align: center;
-    border-bottom: 1px solid #555;
-  }
-  
-  il:last-child {
-    border-bottom: none;
-  }
+    border: 1px solid #555;
+ }
