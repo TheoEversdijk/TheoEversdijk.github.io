@@ -1,9 +1,6 @@
-nav {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
   body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   main {
@@ -20,6 +17,19 @@ nav {
     height: 100%;
     overflow: auto;
     border: 1px solid #555;
+  }
+
+  #right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border: 1px solid #555;
+    float:right;
   }
   
   il {
@@ -46,3 +56,9 @@ nav {
     text-align: center;
     border: 1px solid #555;
  }
+
+#content img {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
