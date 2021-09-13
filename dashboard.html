@@ -9,6 +9,19 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="icon" href="images/hz.png">
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,6 +41,115 @@
       <p>test1234</p>
     </article>
   </main>
+
+  <table class="center">
+    <tr>
+      <th>Quartile</th>
+      <th>Course</th>
+      <th>EC</th>
+      <th>Exam</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td rowspan="3">1</td>
+      <td>Program and Career Orientation</td>
+      <td>2,5</td>
+      <td>Assessment</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Computer Science Basics</td>
+      <td>5</td>
+      <td>Written Exam</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Programming Basics</td>
+      <td>5</td>
+      <td>Case Study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">2</td>
+      <td rowspan="2">Object Oriented Programming</td>
+      <td rowspan="2">10</td>
+      <td>Case Study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Project</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">3</td>
+      <td>Framework Development 1</td>
+      <td>5</td>
+      <td>Case Study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Framework Project 1</td>
+      <td rowspan="3">7,5</td>
+      <td>Project</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Assessment</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Report</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">4</td>
+      <td rowspan="3">Framework Project 2</td>
+      <td rowspan="3">10</td>
+      <td>Portfolio</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Project</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Assessment</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All</td>
+      <td>Personal Professional Development</td>
+      <td>12,5</td>
+      <td>Portfolio</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>Personality 1</td>
+      <td>1,25</td>
+      <td>Portfolio</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>Personality 2</td>
+      <td>1,25</td>
+      <td>Portfolio</td>
+      <td></td>
+    </tr>
+
+  </table>
+
+  <div class="container">
+    <h2>Studiepunten</h2>
+    <div class="progress">
+      <div style="color: black;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0"
+        aria-valuemin="0" aria-valuemax="60" style="width:0%">
+        0%
+      </div>
+    </div>
+  </div>
+
   <footer>
     <p>Theo Eversdijk</p>
     <p><a href="mailto:ever0045@hz.nl">ever0045@hz.nl</a></p>
