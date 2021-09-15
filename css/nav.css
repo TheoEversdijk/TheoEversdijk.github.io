@@ -1,10 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
 body {
 	margin: 0;
 	background: rgba(218, 218, 218, 0.25);
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+
+article {
+  text-align: center;
+}
+
+
+h2 {
+  font-size: 33px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
 
 /*NAV MENU BEGIN */
 .container {
@@ -74,17 +101,10 @@ nav a:hover::before {
 }
 /*NAV MENU END */
 
-article {
-    text-align: center;
-  }
-
+/*FOOTER BEGIN */
  #page-container {
   position: relative;
   min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
 }
 
 #footer {
@@ -96,7 +116,7 @@ article {
   text-align: center;
   border-top: 1px solid #555;
 }
-
+/*FOOTER END */
 
  #content img {
    position: fixed;
@@ -104,11 +124,63 @@ article {
     left: 0px;
   }
 
+/* DASHBOARD COURSES BEGIN*/
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-h2 {
-  font-size: 30px;
+.activecourse {
+  background-color: rgb(251, 255, 0);
+}
+
+.completedcourse {
+  background-color: rgb(59, 218, 80);
+}
+
+.failedcourse {
+  background-color: rgb(255, 0, 0);
+}
+/* DASHBOARD COURSES END*/
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.socials{
+  position:fixed;
+  top:auto;
+  left:0;
+  bottom:0;
+  z-index:100;
+  display:flex;
+  padding-left:15px;
+  padding-bottom:100px;
+  flex-direction:column
 }

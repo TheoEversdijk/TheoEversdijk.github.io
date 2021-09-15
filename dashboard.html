@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dashboard - Theo</title>
   <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/aside.css">
   <link rel="stylesheet" href="css/faq.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="icon" href="images/hz.png">
@@ -17,6 +16,7 @@
     td {
       border: 1px solid black;
       border-collapse: collapse;
+      margin: auto;
     }
 
     table.center {
@@ -59,160 +59,182 @@
   <div id="page-container">
     <div id="content-wrap">
 
-  <header>
-    <div class="container">
-      <h1 class="logo"></h1>
+      <header>
+        <div class="container">
+          <h1 class="logo"></h1>
 
-      <nav>
-        <ul>
-          <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html" target="_self">Home</a></li>
-          <li><i class="fa fa-user-circle" aria-hidden="true"></i><a href="profile.html" target="_self">Profiel</a></li>
-          <li class="active"><i class="fa fa-tachometer" aria-hidden="true"></i><a href="dashboard.html"
-              target="_self">Dashboard</a></li>
-          <li><i class="fa fa-question-circle-o" aria-hidden="true"></i><a href="faq.html" target="_self">FAQ</a></li>
-          <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="blog.html" target="_self">Blog</a></li>
-        </ul>
-      </nav>
+          <nav>
+            <ul>
+              <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html" target="_self">Home</a></li>
+              <li><i class="fa fa-user-circle" aria-hidden="true"></i><a href="profile.html" target="_self">Profiel</a>
+              </li>
+              <li class="active"><i class="fa fa-tachometer" aria-hidden="true"></i><a href="dashboard.html"
+                  target="_self">Dashboard</a></li>
+              <li><i class="fa fa-question-circle-o" aria-hidden="true"></i><a href="faq.html" target="_self">FAQ</a>
+              </li>
+              <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="blog.html" target="_self">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="socials">
+          <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf"
+            target="_blank">Examenregeling</a>
+
+          <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/11.-Uitvoeringsregeling-OER-ICT-Voltijd-2021-2022.pdf"
+            target="_blank">Uitvoeringsregeling</a>
+
+          <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
+
+          <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
+            target="_blank">Teams</a>
+
+          <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">Studievoortgang</a>
+
+          <a href="https://github.com/TheoEversdijk/TheoEversdijk.github.io" target="_blank">GitHub</a>
+
+        </div>
+
+      </header>
+      <main>
+        <article>
+          <h2>Dashboard</h2>
+          <h3>Overzicht van mijn studievoortgang.</h3>
+          <br>
+          <h4>Courses in jaar 1:</h4>
+        </article>
+
+
+
+
+        <table>
+          <tr>
+            <th>Quartile</th>
+            <th>Course</th>
+            <th>EC</th>
+            <th>Exam</th>
+            <th>Grade</th>
+          </tr>
+          <tr class="activecourse">
+            <td rowspan="3">1</td>
+            <td>Program and Career Orientation</td>
+            <td>2,5</td>
+            <td>Assessment</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Computer Science Basics</td>
+            <td>5</td>
+            <td>Written Exam</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Programming Basics</td>
+            <td>5</td>
+            <td>Case Study</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">Object Oriented Programming</td>
+            <td rowspan="2">10</td>
+            <td>Case Study</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="4">3</td>
+            <td>Framework Development</td>
+            <td>5</td>
+            <td>Case Study</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Framework Project 1</td>
+            <td rowspan="3">7,5</td>
+            <td>Project</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Assessment</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Report</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td rowspan="3">4</td>
+            <td rowspan="3">Framework Project 2</td>
+            <td rowspan="3">10</td>
+            <td>Portfolio</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Assessment</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Personal Development</td>
+            <td>12,5</td>
+            <td>Portfolio</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Personality 1</td>
+            <td>1,25</td>
+            <td>Portfolio</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Personality 2</td>
+            <td>1,25</td>
+            <td>Portfolio</td>
+            <td>-</td>
+          </tr>
+
+        </table>
+
+        <br>
+
+        <article>
+          <h4>Studiepunten voortgang:</h4>
+          <p>0/60</p>
+        </article>
+
+        <div class="progress-bar" name="EditRecordnote" id="EditRecordnote" value="0" style="--width: 0"
+          data-label="0%"></div>
+      </main>
+      <div id="content">
+        <a href="https://hz.nl"><img src="images/hz.png" alt="HZ Site" class="hz" target="_blank"></a>
+      </div>
     </div>
-
-    <div class="socials">
-      <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf"
-        target="_blank">Examenregeling</a>
-
-      <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/11.-Uitvoeringsregeling-OER-ICT-Voltijd-2021-2022.pdf"
-        target="_blank">Uitvoeringsregeling</a>
-
-      <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
-
-      <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
-        target="_blank">Teams</a>
-
-      <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">Studievoortgang</a>
-
-      <a href="https://github.com/TheoEversdijk/TheoEversdijk.github.io" target="_blank">GitHub</a>
-
+    <footer id="footer">
+      <p>Theo Eversdijk</p>
+      <p><a href="mailto:ever0045@hz.nl">ever0045@hz.nl</a></p>
+    </footer>
     </div>
-
-  </header>
-  <main>
-    <article>
-      <h2>Dashboard</h2>
-      <p>test1</p>
-    </article>
-  </main>
-
-  <table class="center">
-    <tr>
-      <th>Quartile</th>
-      <th>Course</th>
-      <th>EC</th>
-      <th>Exam</th>
-      <th>Grade</th>
-    </tr>
-    <tr>
-      <td rowspan="3">1</td>
-      <td>Program and Career Orientation</td>
-      <td>2,5</td>
-      <td>Assessment</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Computer Science Basics</td>
-      <td>5</td>
-      <td>Written Exam</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Programming Basics</td>
-      <td>5</td>
-      <td>Case Study</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td rowspan="2">2</td>
-      <td rowspan="2">Object Oriented Programming</td>
-      <td rowspan="2">10</td>
-      <td>Case Study</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Project</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td rowspan="4">3</td>
-      <td>Framework Development 1</td>
-      <td>5</td>
-      <td>Case Study</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td rowspan="3">Framework Project 1</td>
-      <td rowspan="3">7,5</td>
-      <td>Project</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Assessment</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Report</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td rowspan="3">4</td>
-      <td rowspan="3">Framework Project 2</td>
-      <td rowspan="3">10</td>
-      <td>Portfolio</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Project</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Assessment</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>All</td>
-      <td>Personal Professional Development</td>
-      <td>12,5</td>
-      <td>Portfolio</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>N/A</td>
-      <td>Personality 1</td>
-      <td>1,25</td>
-      <td>Portfolio</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>N/A</td>
-      <td>Personality 2</td>
-      <td>1,25</td>
-      <td>Portfolio</td>
-      <td></td>
-    </tr>
-
-  </table>
-
-  <br><br><br><br><br>
-
-  <div class="progress-bar" style="--width: 0" data-label="0%"></div>
-
-
-
-  <div id="content">
-    <a href="https://hz.nl"><img src="images/hz.png" alt="HZ Site" class="hz" target="_blank"></a>
-  </div>
-</div>
-<footer id="footer">
-  <p>Theo Eversdijk</p>
-  <p><a href="mailto:ever0045@hz.nl">ever0045@hz.nl</a></p>
-</footer>
 </body>
+
+<script>
+
+var number = 0;
+
+  if (number < 75) {
+    document.getElementById('EditRecordnote').style.color = "rgb(219, 24, 24)";
+  }
+
+</script>
 
 </html>
