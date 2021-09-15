@@ -8,86 +8,16 @@
   <title>FAQ - Theo</title>
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/aside.css">
+  <link rel="stylesheet" href="css/faq.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="icon" href="images/hz.png">
-  <style>
-  .container {
-      width: 100%;
-      max-width: 80rem;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    .accordion-item {
-      background-color: #283042;
-      border-radius: .4rem;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
-    }
-
-    .accordion-link {
-      font-size: 1.6rem;
-      color: rgba(255, 255, 255, .8);
-      text-decoration: none;
-      background-color: #283042;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 0;
-    }
-
-    .accordion-link i {
-      color: #e7d5ff;
-      padding: .5rem;
-    }
-
-    .accordion-link .ion-md-remove {
-      display: none;
-    }
-
-    .answer {
-      max-height: 0;
-      overflow: hidden;
-      position: relative;
-      background-color: #212838;
-      transition: max-height 650ms;
-    }
-
-    .answer::before{
-      content: "";
-      position: absolute;
-      width: .6rem;
-      height: 90%;
-      background-color: #8fc460;
-      top: 50%;
-      transform: translateY(-50);
-    }
-
-    .answer p{
-      color: rgba(255,255,255,.6);
-      font-size: 1.4rem;
-      padding: 2rem;
-    }
-
-    .accordion-item:target .answer{
-      max-height: 20rem;
-    }
-
-    .accordion-item:target .accordion-link .ion-md-add{
-      display: none;
-    }
-
-    .accordion-item:target .accordion-link .ion-md-remove{
-      display: block;
-    }
-
-  </style>
 </head>
 
 <body>
+  <div id="page-container">
+    <div id="content-wrap">
+
   <header>
     <div class="container">
       <h1 class="logo"></h1>
@@ -127,7 +57,6 @@
   <main>
     <article>
       <h2>Frequently Asked Questions</h2>
-      <p>test1</p>
     </article>
     <section>
       <div class="container">
@@ -217,13 +146,14 @@
     </section>
 
   </main>
-  <footer>
-    <p>Theo Eversdijk</p>
-    <p><a href="mailto:ever0045@hz.nl">ever0045@hz.nl</a></p>
-  </footer>
   <div id="content">
     <a href="https://hz.nl"><img src="images/hz.png" alt="HZ Site" class="hz" target="_blank"></a>
   </div>
+</div>
+<footer id="footer">
+  <p>Theo Eversdijk</p>
+  <p><a href="mailto:ever0045@hz.nl">ever0045@hz.nl</a></p>
+</footer>
 </body>
 
 </html>

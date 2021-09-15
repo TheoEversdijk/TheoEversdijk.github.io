@@ -78,17 +78,28 @@ article {
     text-align: center;
   }
 
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(182, 203, 206);
-    color: black;
-    text-align: center;
-    border: 1px solid #555;
- }
+ #page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+  color: black;
+  text-align: center;
+  border-top: 1px solid #555;
+}
+
 
  #content img {
+   position: fixed;
     top: 0px;
     left: 0px;
   }
