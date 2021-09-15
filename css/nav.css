@@ -6,6 +6,7 @@ body {
 	font-weight: 800;
 }
 
+/*NAV MENU BEGIN */
 .container {
 	width: 80%;
 	margin: 0 auto;
@@ -13,6 +14,7 @@ body {
 
 header {
   background: #55d6aa;
+  border: 1px solid #555;
 }
 
 header::after {
@@ -70,13 +72,13 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+/*NAV MENU END */
 
 article {
     text-align: center;
   }
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -87,7 +89,6 @@ footer {
  }
 
  #content img {
-    position: fixed;
     top: 0px;
     left: 0px;
   }
