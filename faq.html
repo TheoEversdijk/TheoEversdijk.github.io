@@ -10,209 +10,175 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="icon" href="images/hz.png">
-  <style>
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  margin: auto;
-}
-
-table.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.progress-bar {
-  position: relative;
-  width: 500px;
-  height: 3em;
-  background-color: #111;
-  border-radius: 1.5em;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.progress-bar::before {
-  content: attr(data-label);
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: .5em;
-  top: .5em;
-  bottom: .5em;
-  width: calc(var(--width, 0) * 1%);
-  min-width: 2rem;
-  max-width: calc(100% - 1em);
-  background-color: #069;
-  border-radius: 1em;
-  padding: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-  </style>
 </head>
 
 <body>
   <div id="page-container">
     <div id="content-wrap">
 
-  <header>
-    <div class="container">
-      <h1 class="logo"></h1>
+      <header>
+        <div class="container">
+          <h1 class="logo"></h1>
 
-      <nav>
-        <ul>
-          <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html" target="_self">Home</a></li>
-          <li><i class="fa fa-user-circle" aria-hidden="true"></i><a href="profile.html" target="_self">Profiel</a></li>
-          <li><i class="fa fa-tachometer" aria-hidden="true"></i><a href="dashboard.html" target="_self">Dashboard</a>
+          <nav>
+            <ul>
+              <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html" target="_self">Home</a></li>
+              <li><i class="fa fa-user-circle" aria-hidden="true"></i><a href="profile.html" target="_self">Profiel</a>
+              </li>
+              <li><i class="fa fa-tachometer" aria-hidden="true"></i><a href="dashboard.html"
+                  target="_self">Dashboard</a>
+              </li>
+              <li class="active"><i class="fa fa-question-circle-o" aria-hidden="true"></i><a href="faq.html"
+                  target="_self">FAQ</a></li>
+              <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="../blog/index.html" target="_self">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="socials">
+          <li>
+            <i class="fa fa-file-text" aria-hidden="true"></i>
+            <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf"
+              target="_blank">Examenregeling</a>
           </li>
-          <li class="active"><i class="fa fa-question-circle-o" aria-hidden="true"></i><a href="faq.html"
-              target="_self">FAQ</a></li>
-          <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="blog.html" target="_self">Blog</a></li>
-        </ul>
-      </nav>
+
+          <li>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/11.-Uitvoeringsregeling-OER-ICT-Voltijd-2021-2022.pdf"
+              target="_blank">Uitvoeringsregeling</a>
+          </li>
+
+          <li>
+            <i class="fa fa-leanpub" aria-hidden="true"></i>
+            <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
+          </li>
+
+          <li>
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
+              target="_blank">Teams</a>
+          </li>
+
+          <li>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">Studievoortgang</a>
+          </li>
+
+          <li>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/TheoEversdijk/TheoEversdijk.github.io" target="_blank">GitHub</a>
+          </li>
+        </div>
+      </header>
+      <main>
+        <article>
+          <h2>Frequently Asked Questions</h2>
+          <section>
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item" id="question1">
+                  <a class="accordion-link" href="#question1">
+                    Hoe print je een document hier op de HZ?
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                    <p> Bij de DocShop. De DocShop is een uitgebreide reproductieafdeling. Je kunt hier voor een
+                      studentenprijs
+                      documenten professioneel laten printen, kopiëren in kleur of inbinden. Heel handig wanneer je
+                      bijvoorbeeld
+                      je scriptie of een groot verslag wilt afdrukken.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item" id="question2">
+                  <a class="accordion-link" href="#question2">
+                    Hoe scan je een document en stuur je dit naar je laptop hier op de HZ?
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                    <p> Om te kunnen scannen moet je minstens €0,07 op je pasje hebben staan.<br>
+                      Registreer jouw HZ pass via de RFID reader bij de printer.<br>
+                      Daarna, klik op de optie 'Scan'<br>
+                      Volg vervolgens de stappen zoals daar aangegeven.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item" id="question3">
+                  <a class="accordion-link" href="#question3">
+                    Wat moet je doen als je ziek bent of symptomen van het corona virus hebt?
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                    <p><a
+                        href="https://hz.nl/uploads/documents/20201001-Schema-Wat-te-doen-bij-een-mogelijke-coronabesmetting.pdf?utm_medium=email&_hsmi=2&_hsenc=p2ANqtz--uIugFKpss3o2KvovJjzyowDDa0IFEepNbkgp_axw6CwK4eZATtL6Hz8N_w4zad47UL8JWCSs6uoXIAvDcQ-6b5EkvNg&utm_content=2&utm_source=hs_email#asset:25737"
+                        target="_self">Zie Schema.</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item" id="question4">
+                  <a class="accordion-link" href="#question4">
+                    Hoe kun je een projectruimte boeken in één van de vleugels van het gebouw?
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                    <p> Via het Selfservive Portal in je HZ Portal. In de Selfservice Portal klik je op 'Maak een
+                      reservering' en maak je daarin een gewenste reservering aan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item" id="question5">
+                  <a class="accordion-link" href="#question5">
+                    Wat zijn de instructies om je auto te parkeren op het HZ parkeerterrein?
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                  </a>
+                  <div class="answer">
+                    <p> Je kan de parkeerplaats oprijden met de auto door simpelweg je HZ Studenten Pas te scannen bij
+                      de ingang.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+      <div id="content">
+        <a href="https://hz.nl"><img src="images/hz.png" alt="HZ Site" class="hz" target="_blank"></a>
+      </div>
     </div>
-    <div class="socials">
-      <li>
-        <i class="fa fa-file-text" aria-hidden="true"></i>
-        <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf"
-          target="_blank">Examenregeling</a>
-      </li>
-
-      <li>
-        <i class="fa fa-file-text-o" aria-hidden="true"></i>
-        <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/11.-Uitvoeringsregeling-OER-ICT-Voltijd-2021-2022.pdf"
-          target="_blank">Uitvoeringsregeling</a>
-      </li>
-
-      <li>
-        <i class="fa fa-leanpub" aria-hidden="true"></i>
-        <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
-      </li>
-
-      <li>
-        <i class="fa fa-users" aria-hidden="true"></i>
-        <a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
-          target="_blank">Teams</a>
-      </li>
-
-      <li>
-        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-        <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">Studievoortgang</a>
-      </li>
-
-      <li>
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <a href="https://github.com/TheoEversdijk/TheoEversdijk.github.io" target="_blank">GitHub</a>
-      </li>
-    </div>
-  </header>
-  <main>
-    <article>
-      <h2>Frequently Asked Questions</h2>
-    <section>
-      <div class="container">
-        <div class="accordion">
-          <div class="accordion-item" id="question1">
-            <a class="accordion-link" href="#question1">
-              Hoe print je een document hier op de HZ?
-              <i class="icon ion-md-add"></i>
-              <i class="icon ion-md-remove"></i>
-            </a>
-            <div class="answer">
-              <p> Bij de DocShop. De DocShop is een uitgebreide reproductieafdeling. Je kunt hier voor een studentenprijs
-              documenten professioneel laten printen, kopiëren in kleur of inbinden. Heel handig wanneer je bijvoorbeeld
-              je scriptie of een groot verslag wilt afdrukken.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="accordion">
-          <div class="accordion-item" id="question2">
-            <a class="accordion-link" href="#question2">
-              Hoe scan je een document en stuur je dit naar je laptop hier op de HZ?
-              <i class="icon ion-md-add"></i>
-              <i class="icon ion-md-remove"></i>
-            </a>
-            <div class="answer">
-              <p> Om te kunnen scannen moet je minstens €0,07 op je pasje hebben staan.<br>
-                Registreer jouw HZ pass via de RFID reader bij de printer.<br>
-                Daarna, klik op de optie 'Scan'<br>
-                Volg vervolgens de stappen zoals daar aangegeven.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="accordion">
-          <div class="accordion-item" id="question3">
-            <a class="accordion-link" href="#question3">
-              Wat moet je doen als je ziek bent of symptomen van het corona virus hebt?
-              <i class="icon ion-md-add"></i>
-              <i class="icon ion-md-remove"></i>
-            </a>
-            <div class="answer">
-              <p><a href="https://hz.nl/uploads/documents/20201001-Schema-Wat-te-doen-bij-een-mogelijke-coronabesmetting.pdf?utm_medium=email&_hsmi=2&_hsenc=p2ANqtz--uIugFKpss3o2KvovJjzyowDDa0IFEepNbkgp_axw6CwK4eZATtL6Hz8N_w4zad47UL8JWCSs6uoXIAvDcQ-6b5EkvNg&utm_content=2&utm_source=hs_email#asset:25737" target="_self">Zie Schema.</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="accordion">
-          <div class="accordion-item" id="question4">
-            <a class="accordion-link" href="#question4">
-              Hoe kun je een projectruimte boeken in één van de vleugels van het gebouw?
-              <i class="icon ion-md-add"></i>
-              <i class="icon ion-md-remove"></i>
-            </a>
-            <div class="answer">
-              <p> Via het Selfservive Portal in je HZ Portal. In de Selfservice Portal klik je op 'Maak een reservering' en maak je daarin een gewenste reservering aan.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="accordion">
-          <div class="accordion-item" id="question5">
-            <a class="accordion-link" href="#question5">
-              Wat zijn de instructies om je auto te parkeren op het HZ parkeerterrein?
-              <i class="icon ion-md-add"></i>
-              <i class="icon ion-md-remove"></i>
-            </a>
-            <div class="answer">
-              <p> Je kan de parkeerplaats oprijden met de auto door simpelweg je HZ Studenten Pas te scannen bij de ingang.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </article>
-  </main>
-  <div id="content">
-    <a href="https://hz.nl"><img src="images/hz.png" alt="HZ Site" class="hz" target="_blank"></a>
+    <footer id="footer">
+      <p>Theo Eversdijk</p>
+      <p><a href="mailto:ever0045@hz.nl">ever0045@hz.nl</a></p>
+    </footer>
   </div>
-</div>
-<footer id="footer">
-  <p>Theo Eversdijk</p>
-  <p><a href="mailto:ever0045@hz.nl">ever0045@hz.nl</a></p>
-</footer>
-</div>
 </body>
 
 </html>

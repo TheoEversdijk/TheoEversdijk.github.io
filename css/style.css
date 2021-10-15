@@ -124,26 +124,6 @@ nav a:hover::before {
     left: 0px;
   }
 
-/* DASHBOARD COURSES BEGIN*/
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.activecourse {
-  background-color: rgb(251, 255, 0);
-}
-
-.completedcourse {
-  background-color: rgb(59, 218, 80);
-}
-
-.failedcourse {
-  background-color: rgb(255, 0, 0);
-}
-/* DASHBOARD COURSES END*/
-
 /* Header/Blog Title */
 .header {
   padding: 30px;
@@ -257,4 +237,67 @@ section {
 
 .accordion-item:target .accordion-link .ion-md-remove{
   display: block;
+}
+
+
+/* DASHBOARD COURSES BEGIN*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.activecourse {
+  background-color: rgb(251, 255, 0);
+}
+
+.completedcourse {
+  background-color: rgb(59, 218, 80);
+}
+
+.failedcourse {
+  background-color: rgb(255, 0, 0);
+}
+/* DASHBOARD COURSES END*/
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-bar {
+  position: relative;
+  width: 500px;
+  height: 3em;
+  background-color: #111;
+  border-radius: 1.5em;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-bar::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  bottom: .5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(100% - 1em);
+  background-color: #069;
+  border-radius: 1em;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
