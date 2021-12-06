@@ -258,6 +258,11 @@ table {
 .failedcourse {
   background-color: rgb(255, 0, 0);
 }
+
+.resitcourse {
+  background-color: rgb(255, 153, 0);
+}
+
 /* DASHBOARD COURSES END*/
 
 table,
