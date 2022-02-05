@@ -28,7 +28,8 @@
                   target="_self">Dashboard</a></li>
               <li><i class="fa fa-question-circle-o" aria-hidden="true"></i><a href="faq.html" target="_self">FAQ</a>
               </li>
-              <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="../blog/index.html" target="_self">Blog</a>
+              <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="../blog/index.html"
+                  target="_self">Blog</a>
               </li>
             </ul>
           </nav>
@@ -75,15 +76,16 @@
           <h2>Dashboard</h2>
           <h3>Overzicht van mijn studievoortgang.</h3>
           <br>
-          <h4>Courses in jaar 1:</h4>
+          <h4>Courses in jaar 1 per kwartaal:</h4>
 
           <table>
             <tr>
-              <th>Quartile</th>
-              <th>Course</th>
+              <th>Kwartaal</th>
+              <th>Cursus</th>
               <th>EC</th>
-              <th>Exam</th>
-              <th>Grade</th>
+              <th>Examen</th>
+              <th>Resultaat</th>
+              <th>Herkansing</th>
             </tr>
             <tr class="completedcourse">
               <td rowspan="3">1</td>
@@ -91,35 +93,41 @@
               <td>2,5</td>
               <td>Assessment</td>
               <td>9,8</td>
+              <td>-</td>
             </tr>
             <tr class="completedcourse">
               <td>Computer Science Basics</td>
               <td>5</td>
-              <td>Written Exam</td>
+              <td>Theorietentamen</td>
               <td>6,9</td>
+              <td>-</td>
             </tr>
             <tr class="completedcourse">
               <td>Programming Basics</td>
               <td>5</td>
-              <td>Case Study</td>
+              <td>Casustoets</td>
+              <td class="resitcourse">4,0</td>
               <td>7,0</td>
             </tr>
-            <tr class="activecourse">
+            <tr class="failedcourse">
               <td rowspan="2">2</td>
               <td rowspan="2">Object Oriented Programming</td>
               <td rowspan="2">10</td>
-              <td class="resitcourse">Case Study</td>
+              <td>Casustoets</td>
               <td class="resitcourse">0,0</td>
+              <td>4,5</td>
             </tr>
             <tr class="completedcourse">
-              <td>Project</td>
+              <td>Groepsopdracht</td>
               <td>7,8</td>
+              <td>-</td>
             </tr>
             <tr>
               <td rowspan="4">3</td>
               <td>Framework Development</td>
               <td>5</td>
-              <td>Case Study</td>
+              <td>Casustoets</td>
+              <td>-</td>
               <td>-</td>
             </tr>
             <tr>
@@ -127,13 +135,16 @@
               <td rowspan="3">7,5</td>
               <td>Project</td>
               <td>-</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>Assessment</td>
               <td>-</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>Report</td>
+              <td>-</td>
               <td>-</td>
             </tr>
             <tr>
@@ -142,32 +153,69 @@
               <td rowspan="3">10</td>
               <td>Portfolio</td>
               <td>-</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>Project</td>
+              <td>-</td>
               <td>-</td>
             </tr>
             <tr>
               <td>Assessment</td>
               <td>-</td>
+              <td>-</td>
             </tr>
             <tr class="activecourse">
-              <td rowspan="3">-</td>
+              <td>-</td>
               <td>Personal Development</td>
               <td>12,5</td>
               <td>Portfolio</td>
               <td>-</td>
+              <td>-</td>
             </tr>
-            <tr class="completedcourse">
-              <td>Personality 1</td>
+          </table>
+
+          <h4>IT Personality:</h4>
+          <table>
+            <tr>
+              <th>Cursus</th>
+              <th>EC</th>
+              <th>Categorie</th>
+
+            <tr class="activecourse">
+              <td>Project Week 1</td>
               <td>1,25</td>
-              <td>Portfolio</td>
-              <td>8,0</td>
+              <td>Sustainable Development</td>
             </tr>
             <tr>
-              <td>Personality 2</td>
+              <td>International Week</td>
               <td>1,25</td>
-              <td>Portfolio</td>
+              <td>Personal Development</td>
+            </tr>
+            <tr>
+              <td>IT Personality 1</td>
+              <td>1,25</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>IT Personality 2</td>
+              <td>1,25</td>
+              <td>-</td>
+            </tr>
+          </table>
+
+          <h4>Professional Skills:</h4>
+          <table>
+            <tr>
+              <th>Cursus</th>
+              <th>Examen</th>
+              <th>Resultaat</th>
+              <th>Herkansing</th>
+            </tr>
+            <tr class="completedcourse">
+              <td>Professional Skills 1</td>
+              <td>Taaltoets Nederlands</td>
+              <td>6,6</td>
               <td>-</td>
             </tr>
           </table>
@@ -175,12 +223,14 @@
           <br>
 
           <h4>Studiepunten voortgang:</h4>
-          <p>13,75/60</p>
+          <p>12,5*/60</p>
+
+          <div class="progress-bar" name="EditRecordnote" id="EditRecordnote" value="13.75" style="--width: 13.75"
+            data-label="23%"></div>
+          <br>
+          <p>* +5 onderwaterpunten van OOP Project.</p>
         </article>
 
-        <div class="progress-bar" name="EditRecordnote" id="EditRecordnote" value="13.75" style="--width: 13.75"
-          data-label="23%"></div>
-        <br>
       </main>
       <div id="content">
         <a href="https://hz.nl"><img src="images/hz.png" alt="HZ Site" class="hz" target="_blank"></a>

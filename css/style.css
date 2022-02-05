@@ -247,6 +247,10 @@ table {
 	border-spacing: 0;
 }
 
+.top {
+background-color: rgb(202, 201, 198);
+}
+
 .activecourse {
   background-color: rgb(251, 255, 0);
 }
@@ -256,7 +260,7 @@ table {
 }
 
 .failedcourse {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 29, 29);
 }
 
 .resitcourse {
