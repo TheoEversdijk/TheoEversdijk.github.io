@@ -247,9 +247,13 @@ table {
 	border-spacing: 0;
 }
 
-.top {
-background-color: rgb(202, 201, 198);
+.product {
+color: rgb(0, 86, 247);
 }
+
+.source {
+  color: rgb(37, 0, 247);
+  }  
 
 .activecourse {
   background-color: rgb(251, 255, 0);
