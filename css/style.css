@@ -263,6 +263,10 @@ color: rgb(0, 86, 247);
   background-color: rgb(59, 218, 80);
 }
 
+.blank {
+  background-color: white;
+}
+
 .failedcourse {
   background-color: rgb(255, 29, 29);
 }
